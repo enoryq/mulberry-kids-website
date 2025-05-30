@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -16,7 +15,7 @@ const ClassesSection = () => {
       description: "As toddlers grow more curious and independent, we introduce guided activities that foster learning through joyful play and children begin laying the foundation for more structured learning ahead.",
       age: "2 - 3.5 Years",
       capacity: "10 Kids",
-      image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop"
     },
     {
       title: "🧠 Preschoolers",
