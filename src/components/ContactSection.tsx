@@ -113,27 +113,6 @@ const ContactSection = () => {
                   </a>
                 </div>
               </div>
-
-              {/* Contact Info */}
-              <div className="mt-8 pt-6 border-t border-gray-200">
-                <h4 className="text-lg font-semibold text-gray-800 mb-4">Visit Us</h4>
-                <div className="space-y-3">
-                  <div>
-                    <p className="font-medium text-gray-800">Address</p>
-                    <p className="text-gray-600">26 Mulberry Street, Brackendowns, Alberton</p>
-                  </div>
-                  
-                  <div>
-                    <p className="font-medium text-gray-800">Phone</p>
-                    <p className="text-gray-600">071 893 9198</p>
-                  </div>
-                  
-                  <div>
-                    <p className="font-medium text-gray-800">Operating Hours</p>
-                    <p className="text-gray-600">Monday – Friday: 6:30 AM – 6:00 PM</p>
-                  </div>
-                </div>
-              </div>
             </CardContent>
           </Card>
 

@@ -6,8 +6,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useState } from "react";
 
 const GallerySection = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
   const images = [
     {
       url: "/lovable-uploads/0c463ccf-579f-43fe-8f63-d2c98f845883.png",
@@ -20,14 +23,6 @@ const GallerySection = () => {
     {
       url: "/lovable-uploads/964bf5ee-b7b0-47b3-aa24-d748ab43953b.png",
       caption: "Happy Learning Moments"
-    },
-    {
-      url: "/lovable-uploads/782262d4-fab7-431b-935a-8c5522e7a653.png",
-      caption: "One-on-One Learning Support"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&h=600&fit=crop",
-      caption: "Art and Creativity Time"
     }
   ];
 
@@ -45,7 +40,11 @@ const GallerySection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Carousel className="w-full">
+          <Carousel className="w-full" onSelect={(api) => {
+            if (api) {
+              setCurrentSlide(api.selectedScrollSnap());
+            }
+          }}>
             <CarouselContent>
               {images.map((image, index) => (
                 <CarouselItem key={index}>
@@ -68,6 +67,21 @@ const GallerySection = () => {
             <CarouselPrevious className="left-4" />
             <CarouselNext className="right-4" />
           </Carousel>
+          
+          {/* Pagination dots */}
+          <div className="flex justify-center mt-6 space-x-2">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  currentSlide === index ? 'bg-purple-600' : 'bg-gray-300'
+                }`}
+                onClick={() => {
+                  // This would need carousel API to programmatically go to slide
+                }}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

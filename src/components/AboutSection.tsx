@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 const AboutSection = () => {
   return <section id="about" className="py-20 bg-white">
@@ -56,8 +57,8 @@ const AboutSection = () => {
             </p>
           </div>
           
-          <div className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
-            <img src="/lovable-uploads/0c463ccf-579f-43fe-8f63-d2c98f845883.png" alt="Outdoor play activities" className="w-full h-full object-cover rounded-lg" />
+          <div className="flex justify-center">
+            <img src="/lovable-uploads/0c463ccf-579f-43fe-8f63-d2c98f845883.png" alt="Outdoor play activities" className="w-64 h-48 object-cover rounded-lg shadow-lg" />
           </div>
         </div>
       </div>
