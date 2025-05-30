@@ -1,9 +1,6 @@
-
 import { Button } from "@/components/ui/button";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-white">
+  return <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
@@ -14,11 +11,7 @@ const AboutSection = () => {
         {/* Our School Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
           <div className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
-            <img 
-              src="/lovable-uploads/83eda8cf-d62f-4cdf-a0b2-2b08979dbb83.png" 
-              alt="Children learning" 
-              className="w-full h-full object-cover rounded-lg"
-            />
+            <img alt="Children learning" className="w-full h-full object-cover rounded-lg" src="https://mulberrykids.co.za/wp-content/uploads/2025/04/Screenshot_1.png" />
           </div>
           
           <div className="space-y-6">
@@ -64,16 +57,10 @@ const AboutSection = () => {
           </div>
           
           <div className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
-            <img 
-              src="/lovable-uploads/0c463ccf-579f-43fe-8f63-d2c98f845883.png" 
-              alt="Outdoor play activities" 
-              className="w-full h-full object-cover rounded-lg"
-            />
+            <img src="/lovable-uploads/0c463ccf-579f-43fe-8f63-d2c98f845883.png" alt="Outdoor play activities" className="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
