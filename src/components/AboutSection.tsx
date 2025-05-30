@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const AboutSection = () => {
@@ -5,16 +6,23 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-purple-600 font-semibold mb-2">A little About Us</p>
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Special Care For Your Children
+            About us
           </h2>
         </div>
 
         {/* Our School Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+          <div className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/83eda8cf-d62f-4cdf-a0b2-2b08979dbb83.png" 
+              alt="Children learning" 
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-gray-800">Our School</h3>
+            <h3 className="text-2xl font-bold text-gray-800">Our school</h3>
             <p className="text-gray-600 leading-relaxed">
               Founded in April 2003, <span className="text-purple-600 font-semibold">Mulberry Kids</span> is 
               more than just a nursery school – it's a warm, nurturing space where children can feel safe, 
@@ -37,34 +45,12 @@ const AboutSection = () => {
               Apply Now
             </Button>
           </div>
-          
-          <div className="relative">
-            <img 
-              src="/lovable-uploads/83eda8cf-d62f-4cdf-a0b2-2b08979dbb83.png" 
-              alt="Children playing with blocks" 
-              className="w-full rounded-3xl shadow-lg"
-            />
-            <div className="absolute -bottom-4 -left-4 bg-purple-600 text-white p-4 rounded-full">
-              <span className="text-2xl">🚀</span>
-            </div>
-          </div>
         </div>
 
         {/* Our Approach Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="order-2 lg:order-1 relative">
-            <img 
-              src="https://images.unsplash.com/photo-1544178445-7ad53eea0b85?w=600&h=400&fit=crop" 
-              alt="Learning environment" 
-              className="w-full rounded-3xl shadow-lg"
-            />
-            <div className="absolute -top-4 -right-4 bg-yellow-400 rounded-full p-3">
-              <span className="text-2xl">⭐</span>
-            </div>
-          </div>
-          
-          <div className="order-1 lg:order-2 space-y-6">
-            <h3 className="text-2xl font-bold text-gray-800">Our Approach</h3>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-6">
+            <h3 className="text-2xl font-bold text-gray-800">Our approach</h3>
             <p className="text-gray-600 leading-relaxed">
               At Mulberry Kids, we believe in creating a foundation for lifelong learning through 
               play-based education, social-emotional development, and creative expression. Our 
@@ -75,6 +61,14 @@ const AboutSection = () => {
               deserve, while building strong partnerships with families to support each child's 
               unique journey of growth and discovery.
             </p>
+          </div>
+          
+          <div className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/0c463ccf-579f-43fe-8f63-d2c98f845883.png" 
+              alt="Outdoor play activities" 
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>
