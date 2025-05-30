@@ -113,31 +113,11 @@ const ContactSection = () => {
                   </a>
                 </div>
               </div>
-            </CardContent>
-          </Card>
 
-          {/* Map and Contact Info */}
-          <div className="space-y-8">
-            <Card className="shadow-lg rounded-3xl overflow-hidden">
-              <div className="h-64 bg-gray-200">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.4789!2d28.1264!3d-26.1958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDExJzQ0LjkiUyAyOMKwMDcnMzUuMCJF!5e0!3m2!1sen!2sza!4v1234567890123"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Mulberry Kids Location"
-                />
-              </div>
-            </Card>
-
-            <Card className="shadow-lg rounded-3xl">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Visit Us</h3>
-                
-                <div className="space-y-4">
+              {/* Contact Info */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <h4 className="text-lg font-semibold text-gray-800 mb-4">Visit Us</h4>
+                <div className="space-y-3">
                   <div>
                     <p className="font-medium text-gray-800">Address</p>
                     <p className="text-gray-600">26 Mulberry Street, Brackendowns, Alberton</p>
@@ -153,9 +133,25 @@ const ContactSection = () => {
                     <p className="text-gray-600">Monday – Friday: 6:30 AM – 6:00 PM</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Larger Map */}
+          <Card className="shadow-lg rounded-3xl overflow-hidden">
+            <div className="h-[600px] bg-gray-200">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.4789!2d28.1264!3d-26.1958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDExJzQ0LjkiUyAyOMKwMDcnMzUuMCJF!5e0!3m2!1sen!2sza!4v1234567890123"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mulberry Kids Location"
+              />
+            </div>
+          </Card>
         </div>
       </div>
     </section>
